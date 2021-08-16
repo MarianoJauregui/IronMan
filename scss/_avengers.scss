@@ -1,0 +1,211 @@
+
+h3{
+    text-align: center;
+    color: #ffff;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 4em;
+
+    .card{
+        background: linear-gradient(90deg, #4b0908, #6a0c0b, #aa0505);
+        display: flex;
+        flex-flow: column;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0 10px 25px -10px black;
+        transition: 300ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px -10px black;
+        }
+    }
+}
+
+
+#ironMan{
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc5dtrv-8457dd18-0573-485e-8e27-38469d4070c9.png/v1/fit/w_300,h_900,q_70,strp/iron_man_character_icon_by_thelivingethan_dc5dtrv-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM1ZHRydi04NDU3ZGQxOC0wNTczLTQ4NWUtOGUyNy0zODQ2OWQ0MDcwYzkucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.u_M3lmuAMFlKQifTJzCYaAReaw40hHuc5Jlg3Y4ea_E);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-basis: 14em;
+}
+
+#thor{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc7z8wz-9faac4fe-0f47-4685-82d1-4df23f5b9bda.png/v1/fill/w_350,h_350,q_70,strp/mighty_thor_icon_by_thelivingethan_dc7z8wz-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM3ejh3ei05ZmFhYzRmZS0wZjQ3LTQ2ODUtODJkMS00ZGYyM2Y1YjliZGEucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.q97mOat8fmst1RtwGtazhR5xKRkceNNAV1m8pXHWFFE);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#hulk{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc92y89-1e2a5227-fe38-41fa-9748-d4c12cdd6c7f.png/v1/fill/w_350,h_350,q_70,strp/hulk_icon_by_thelivingethan_dc92y89-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5Mnk4OS0xZTJhNTIyNy1mZTM4LTQxZmEtOTc0OC1kNGMxMmNkZDZjN2YucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ec_2HcYUZI4j8KV0LEBNRpCW_Iy5V9_ZGEzaGzZKtOM);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#capAmerica{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc72ryu-d8762598-498e-40ba-aa60-4a7dd5634ef2.png/v1/fill/w_350,h_350,q_70,strp/captain_america_icon_by_thelivingethan_dc72ryu-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM3MnJ5dS1kODc2MjU5OC00OThlLTQwYmEtYWE2MC00YTdkZDU2MzRlZjIucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.f0kdM53CQytEd9nu1hnslu5FLwJFBGg7O2whMfflNTs);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#romanoff{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc991d4-34576ba1-a8bb-42f5-86e8-7f60e0f89be1.png/v1/fill/w_350,h_350,q_70,strp/black_widow_icon_by_thelivingethan_dc991d4-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTFkNC0zNDU3NmJhMS1hOGJiLTQyZjUtODZlOC03ZjYwZTBmODliZTEucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ymKqTvUz0JnxOIoQkvbtrvLf_xVrYwr_KfYsWWulK14);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hawkEye{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc991ga-5ccb0f83-bfaf-4cdf-8546-a91f74aaffcc.png/v1/fill/w_350,h_350,q_70,strp/hawkeye_icon_by_thelivingethan_dc991ga-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTFnYS01Y2NiMGY4My1iZmFmLTRjZGYtODU0Ni1hOTFmNzRhYWZmY2MucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3jD8FoLM3U1jHZgqGOBu5BtK0yThewqKPHUjE9h-Bnk);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#falcon{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc991vt-59698568-35a0-4930-9072-10fe6a897606.png/v1/fill/w_350,h_350,q_70,strp/falcon_icon_by_thelivingethan_dc991vt-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTF2dC01OTY5ODU2OC0zNWEwLTQ5MzAtOTA3Mi0xMGZlNmE4OTc2MDYucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.wKLF5-c1LE2IvNlzRTlEkAS-I7uQ9gMLobdfYaXd-7Q);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#warMachine{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc991yy-46e62d57-a0e2-4fdc-b47c-f05591160eb6.png/v1/fill/w_350,h_350,q_70,strp/war_machine_icon_by_thelivingethan_dc991yy-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTF5eS00NmU2MmQ1Ny1hMGUyLTRmZGMtYjQ3Yy1mMDU1OTExNjBlYjYucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5LaVXQG_27pNFknt_EGOlzeuxvDHoe2Fvv7qCY5t3DE);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#scarletWitch{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc991j6-67fa9ada-a48c-447e-8045-f5abe0931d8e.png/v1/fill/w_350,h_350,q_70,strp/scarlet_witch_icon_by_thelivingethan_dc991j6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTFqNi02N2ZhOWFkYS1hNDhjLTQ0N2UtODA0NS1mNWFiZTA5MzFkOGUucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.g2_N65I4eQIRUrj4WdzzjCuYj5n9CmMArgCpBiDPrTw);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#antMan{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcipp2j-1c51f79a-5ece-4beb-8b28-9eae9b39e666.png/v1/fill/w_250,h_250,q_70,strp/ant_man_icon_by_thelivingethan_dcipp2j-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNpcHAyai0xYzUxZjc5YS01ZWNlLTRiZWItOGIyOC05ZWFlOWIzOWU2NjYucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.F9j6KkWRtFrfIAaYz2Ee6Q9_vsoy7P5FohLFpj9bziM);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#wasp{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcippfa-2789eda7-9a7a-4960-a85a-cce995c0ed39.png/v1/fill/w_250,h_250,q_70,strp/wasp_icon_by_thelivingethan_dcippfa-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNpcHBmYS0yNzg5ZWRhNy05YTdhLTQ5NjAtYTg1YS1jY2U5OTVjMGVkMzkucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mdUeVDjyCLwKcSERgwL2GFWd47uFBv6q_hHhWy4Z6yk);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#spiderMan{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcaz5eh-ec66abf4-ea8e-49da-b0a7-fb94a950d6e7.png/v1/fill/w_350,h_350,q_70,strp/iron_spider_icon_by_thelivingethan_dcaz5eh-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhejVlaC1lYzY2YWJmNC1lYThlLTQ5ZGEtYjBhNy1mYjk0YTk1MGQ2ZTcucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.aGyS4Ir6Xe9lqfdsqihYfpw0QHF3xTHdgS8oGKjdWgo);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#starLord{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc9922d-99a0a544-6798-4241-b09a-a95bc14ecb7f.png/v1/fill/w_350,h_350,q_70,strp/star_lord_icon_by_thelivingethan_dc9922d-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGM5OTIyZC05OWEwYTU0NC02Nzk4LTQyNDEtYjA5YS1hOTViYzE0ZWNiN2YucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-UQ3HSKfBig84ukOhbtsjL9oKmCU1cxUZU-D4NENI-E);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#nebula{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawzwy-d08e1e75-e5da-4a54-aa8a-26f79c767205.png/v1/fit/w_300,h_900,q_70,strp/nebula_icon_by_thelivingethan_dcawzwy-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3p3eS1kMDhlMWU3NS1lNWRhLTRhNTQtYWE4YS0yNmY3OWM3NjcyMDUucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xAiEOV1wgIH9C377szj839aC4AhbLzMmYR8wi67I904);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gamora{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawz0o-1390be32-6e22-427b-a220-f69865524da7.png/v1/fill/w_350,h_350,q_70,strp/gamora_icon_by_thelivingethan_dcawz0o-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3owby0xMzkwYmUzMi02ZTIyLTQyN2ItYTIyMC1mNjk4NjU1MjRkYTcucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.B24TJge7MNQ_llnZpFZHba8KFZ8ILGCE0-EKnq34eR0);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drax{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawz4c-b08abcd8-6769-4013-a6e4-6e408676c8c0.png/v1/fill/w_350,h_350,q_70,strp/drax_icon_by_thelivingethan_dcawz4c-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3o0Yy1iMDhhYmNkOC02NzY5LTQwMTMtYTZlNC02ZTQwODY3NmM4YzAucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Xq4zjMe99MKZRpDJQU4GqqZZ43MuZS8LItK6Pt8x0Sg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rocket{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawz9p-4e9e96cf-2028-4087-904b-db1f6fdd767d.png/v1/fill/w_350,h_350,q_70,strp/rocket_racoon_icon_by_thelivingethan_dcawz9p-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3o5cC00ZTllOTZjZi0yMDI4LTQwODctOTA0Yi1kYjFmNmZkZDc2N2QucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.N_7y4Ka022h0jQ0NXIvCvC7VO3mAwalK1T4ZMwwY_9c);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#groot{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawzdx-f5e99100-64cc-4e63-856e-fc1ee866a1ff.png/v1/fill/w_350,h_350,q_70,strp/groot_icon_by_thelivingethan_dcawzdx-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3pkeC1mNWU5OTEwMC02NGNjLTRlNjMtODU2ZS1mYzFlZTg2NmExZmYucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1LPbFdCJYCB02yGt7fZEz17FNYWL8T5pXlWWNP6W2CY);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#mantis{    
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcawzmf-04a3dfb3-50dd-4b86-aaaf-f8be32d4ee4a.png/v1/fill/w_350,h_350,q_70,strp/mantis_icon_by_thelivingethan_dcawzmf-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhd3ptZi0wNGEzZGZiMy01MGRkLTRiODYtYWFhZi1mOGJlMzJkNGVlNGEucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pV3YQwKrThfmOJuhp43bQepZl5ZDt8uETeYb2a1mfd8);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#drStrange{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcax023-67fd501d-e556-4973-893d-51d666a17a43.png/v1/fill/w_350,h_350,q_70,strp/doctor_strange_icon_by_thelivingethan_dcax023-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNheDAyMy02N2ZkNTAxZC1lNTU2LTQ5NzMtODkzZC01MWQ2NjZhMTdhNDMucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.w_ADdYwCWKpHPQCvTTS6uQ_YinF974Cxxc5ZA3IUjFk);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#wong{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcaz58w-5d553750-3847-49b8-a087-0d51833e3d9a.png/v1/fill/w_350,h_350,q_70,strp/wong_icon_by_thelivingethan_dcaz58w-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhejU4dy01ZDU1Mzc1MC0zODQ3LTQ5YjgtYTA4Ny0wZDUxODMzZTNkOWEucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.l1tRmXwa2LJmJBaM1NWaXU8op-hep7kiMwWV-HTa21I);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#blackPanther{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc0ju3a-43c05b09-1394-4b45-b442-94fe52834df8.png/v1/fill/w_250,h_250,q_70,strp/black_panther_character_icon_by_thelivingethan_dc0ju3a-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGMwanUzYS00M2MwNWIwOS0xMzk0LTRiNDUtYjQ0Mi05NGZlNTI4MzRkZjgucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qqzosyiLGRTifwQFWGc3cf3b9FeZ8AwD7XD9Axo56Co);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#okoye{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc2jam5-1a1df9c2-6677-4523-8643-6f4fd9bd2fa9.png/v1/fill/w_350,h_350,q_70,strp/okoye_character_icon_by_thelivingethan_dc2jam5-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGMyamFtNS0xYTFkZjljMi02Njc3LTQ1MjMtODY0My02ZjRmZDliZDJmYTkucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LjhRczEUT0cSOP_XhPDofWQU9VgUNqMR1gWHIfrYJuM);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bucky{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcaz5ik-3caafb3c-364a-4baa-b29f-50b5b4dfffc3.png/v1/fill/w_350,h_350,q_70,strp/bucky_icon_by_thelivingethan_dcaz5ik-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNhejVpay0zY2FhZmIzYy0zNjRhLTRiYWEtYjI5Zi01MGI1YjRkZmZmYzMucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Em5kdMC8KvYHqlbf5VL28CqP0tn55FU77okil9Sd-3U);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#shuri{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dc0x9vk-3e2ab3a6-5e4e-4213-8bcb-6debb5a7ded1.png/v1/fit/w_300,h_900,q_70,strp/shuri_character_icon_by_thelivingethan_dc0x9vk-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzI4OCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGMweDl2ay0zZTJhYjNhNi01ZTRlLTQyMTMtOGJjYi02ZGViYjVhN2RlZDEucG5nIiwid2lkdGgiOiI8PTMyODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.zizAM9utSXzFrFU_s2271YBj1LK5qKKhxoJdNMV1PN8);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#capMarvel{
+    @extend #ironMan;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aac39ffc-42e8-49fe-a1a1-9706baf7af0d/dcnbhvj-a2d4c5ce-a414-4bed-aa35-4113203b1c76.png/v1/fill/w_250,h_350,q_70,strp/captain_marvel_by_thelivingethan_dcnbhvj-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDIwMCIsInBhdGgiOiJcL2ZcL2FhYzM5ZmZjLTQyZTgtNDlmZS1hMWExLTk3MDZiYWY3YWYwZFwvZGNuYmh2ai1hMmQ0YzVjZS1hNDE0LTRiZWQtYWEzNS00MTEzMjAzYjFjNzYucG5nIiwid2lkdGgiOiI8PTMwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.9HKlcHDeglqSKju7PuJUZ_FiOVT-FK0JDWFTo0ZIrsk);
+    background-repeat: no-repeat;
+    background-position: center;
+}

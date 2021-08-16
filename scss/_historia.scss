@@ -1,0 +1,29 @@
+.p-txt-main{
+    color: #ffff;
+    margin: 1em;
+    text-align: center;
+    font-style: italic;
+
+    &:hover{
+        color: #fbca03;
+    }
+}
+
+.p-txt{
+    color: #ffff;
+    margin: 1em;
+    text-align: center;
+    
+}
+
+.imgHist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .imgHistResponsive{
+        max-width: 70%;
+        height: 70%;
+    }
+
+}
