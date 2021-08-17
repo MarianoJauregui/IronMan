@@ -68,8 +68,9 @@ body {
 }
 
 .imgHist .imgHistResponsive {
-  max-width: 70%;
+  max-width: 85%;
   height: 70%;
+  border-radius: 2em;
 }
 
 footer {
