@@ -1,6 +1,7 @@
 video{
-    display: block;
-    width: 100%;
+    @include display(flex, center, center);
+    margin: auto;
+    max-width: 80%;
     height: auto;
-
+    border-radius: 5rem;
 }
