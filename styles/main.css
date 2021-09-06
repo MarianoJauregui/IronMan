@@ -409,4 +409,12 @@ h3 {
   height: 100vh;
   text-align: center;
 }
+
+.img404{
+  background-image: url(https://images4.alphacoders.com/222/thumb-1920-222138.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15em;
+}
+
 /*# sourceMappingURL=main.css.map */
